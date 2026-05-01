@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "StatSolve",
+    "slug": "statsolve",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E4D8C"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.statsolve.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "StatSolve uses the camera so you can photograph statistics questions for instant solving.",
+        "NSPhotoLibraryUsageDescription": "StatSolve accesses your photo library so you can choose a photo of a statistics question."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E4D8C"
+      },
+      "package": "com.statsolve.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "StatSolve needs camera access to photograph questions."
+        }
+      ]
+    ],
+    "scheme": "statsolve",
+    "extra": {
+      "eas": {
+        "projectId": "f2bfb6f9-208a-4165-80b4-6d4d30ecbba7"
+      }
+    },
+    "owner": "jkay4972"
+  }
+}
